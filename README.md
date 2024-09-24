@@ -1,10 +1,30 @@
-# dutip 🔄🖥️
-
-Only works on macOS.
+# dutip
 
 A simple command-line tool to change the default application for file extensions using [duti](https://github.com/moretension/duti) on macOS. 🍎
 
-For example when switching editors from VSCode to Cursor.
+## Installation
+
+### Using Go
+
+```shell
+go install github.com/albinekb/dutip@latest
+```
+
+## Usage
+
+```shell
+dutip
+```
+
+When trying out different code editors, you can use the following commands to switch between Cursor and VSCode:
+
+```sh
+dutip -from com.microsoft.VSCodeInsiders -to Cursor.app
+```
+
+```sh
+dutip -from Cursor.app -to com.microsoft.VSCodeInsiders
+```
 
 ## Features ✨
 
@@ -15,15 +35,20 @@ For example when switching editors from VSCode to Cursor.
 
 ## Installation 🛠️
 
-1. Ensure you have [duti](https://github.com/moretension/duti) installed on your system. 🔧
-2. Install dutip: 📥
-
-## Usage 🚀
+1. Ensure you have [duti](https://github.com/moretension/duti) & [Go](https://go.dev/doc/install) installed on your system. 🔧
 
 ```sh
-dutip -from com.microsoft.VSCodeInsiders -to Cursor.app
+brew install duti go
 ```
 
+2. Install dutip: 📥
+
 ```sh
-dutip -from Cursor.app -to com.microsoft.VSCodeInsiders
+go install github.com/albinekb/dutip@latest
+```
+
+3. Run dutip: 🚀
+
+```sh
+dutip
 ```

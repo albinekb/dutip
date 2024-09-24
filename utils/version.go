@@ -7,11 +7,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/blang/semver/v4"
+	semver "github.com/blang/semver/v4"
 )
 
 // Version holds the current version number
-const VERSION_STRING = "0.1.10"
+const VERSION_STRING = "0.1.11"
 
 var Version = VERSION_STRING
 

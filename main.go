@@ -1,13 +1,14 @@
 package main
 
 import (
-	utils "dutip/utils"
 	"flag"
 	"fmt"
 	"log"
 	"os"
 	"os/exec"
 	"strings"
+
+	utils "github.com/albinekb/dutip/utils"
 )
 
 func getExtensions() []string {
